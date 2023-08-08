@@ -142,4 +142,32 @@ nav .fa{
 }
 .surface:hover{
 background: rgba(27, 0, 126, 0.7);
-} 
+cursor: pointer;
+}
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+
+}
+.footer h4{
+    margin-top: 20px;
+    margin-bottom: 25px;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+@media(max-width: 700px) {
+    .fashion h1{
+        font-size: 15px;
+    }
+    .footer h4{
+        font-size: 12px;
+    }
+    .footer p{
+        font-size: 12px;
+    }
+    .firstimg h4{
+        font-size: 10px;
+    }
+}
