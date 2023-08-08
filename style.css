@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+}
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/gangnam.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    z-index: 2;
+    position: relative;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 20px;
+
+}
+.nav-links ul li a{
+    color:white;
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    
+}
+
+.nav-links a:hover{
+    background-color: blue;
+    transition: 0.3s;
+    border: 1px solid blue;
+    border-radius: 7px;
+    padding: 2px 5px;
+}
+.text{
+    width: 80%;
+    color:white;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    left: 50%;
+
+}
+
+.text h1{
+    font-size: 90px;
+}
+
+.text p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+}
+
+@media(max-width: 700px) {
+    .text h1{
+         font-size: 30px; 
+    }
+    .text p{
+        font-size: 10px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+    }
+    .fashion h1 {
+        font-size: 10px;
+    }
+}
+.fashion{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.fashion h1{
+    font-size: 30px;
+}
